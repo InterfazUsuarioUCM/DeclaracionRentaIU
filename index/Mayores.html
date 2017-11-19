@@ -132,22 +132,25 @@
 
       </div>
       <!-- /NAVEGACIÓN Y LOGO-->
-
+      </br>
+      </br>
         <h1> 
           Mayores de 65 años o discapacitados
         </h1>
+
         <div class="panel panel-default">
             <div class="panel-body"> 
         <p class="text-info">Rellene sólo los casos en los que sus familiares no superen rentas superiores a los 8000 euros anuales.</p>
         <!--SOLTERO O CASADO-->
         <table>
-          <caption>*Si alguno de los familiares convive con otros descendientes al menos medio año, indicar el número de personas.</caption>
         <thead>
         <tr>
            <th class="col-sm-3">Año de nacimiento</th>
-           <th class="col-sm-3">Grado de discapacidad</th>
-           <th class="col-sm-3">Necesidades </th>
-           <th class="col-sm-3">*Convivencia con otros descendientes</th>
+           <th class="col-sm-2">Grado de discapacidad</th>
+           <th class="col-sm-1">Necesidades </th>
+           <th class="col-sm-5">Convivencia con otros descendientes
+            <span class="glyphicon glyphicon-warning-sign" data-toggle= "tooltip" title = "Si alguno de los familiares convive con otros descendientes al menos medio año, indicar el número de personas.">
+              </span></th>
 
 
         </tr>
@@ -182,11 +185,10 @@
                   <div class="col-md-4">
                   <input type="text" class="form-control" placeholder="Año"><!--Día-->
                   </div>
-
-                </div>
+            
               </td><!--AÑO DE NACIMIENTO-->
                 
-           <td class="col-sm-3"> <select name="discapacidad">
+           <td class="col-sm-2"> <select name="discapacidad">
 
             <option value="35">Entre 0% y 35%</option>
             <option value="65">Entre 35% y 65%</option>
@@ -194,11 +196,27 @@
         </select></td><!--GRADO DISCAP-->
 
 
-        <td class="col-sm-2">
+        <td class="col-sm-3">
           <input name="java" type="checkbox" value="on"/> Tiene acreditada la necesidad de ayuda de terceros  </td><!--NECESIDADES-->       
         <td>
-      <div class="col-md-5">
-      <input type="text" class="form-control" ><!--Día-->
+      <div class="col-md-7">
+      <div class="center">
+          <p>
+            </p><div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </span>
+            </div>
+          <p></p>
+          </div>
         </div>
 
         </td> 
@@ -234,7 +252,7 @@
                 </div>
               </td><!--AÑO DE NACIMIENTO-->
                 
-           <td class="col-sm-3"> <select name="discapacidad">
+           <td class="col-sm-2"> <select name="discapacidad">
 
             <option value="35">Entre 0% y 35%</option>
             <option value="65">Entre 35% y 65%</option>
@@ -242,11 +260,27 @@
         </select></td><!--GRADO DISCAP-->
 
 
-        <td class="col-sm-2">
+        <td class="col-md-3">
           <input name="java" type="checkbox" value="on"/> Tiene acreditada la necesidad de ayuda de terceros  </td><!--NECESIDADES-->       
         <td>
-      <div class="col-md-5">
-      <input type="text" class="form-control" ><!--Día-->
+      <div class="col-md-7">
+      <div class="center">
+          <p>
+            </p><div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="10">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </span>
+            </div>
+          <p></p>
+          </div>
         </div>
 
         </td> 
@@ -281,7 +315,7 @@
                 </div>
               </td><!--AÑO DE NACIMIENTO-->
                 
-           <td class="col-sm-3"> <select name="discapacidad">
+           <td class="col-sm-2"> <select name="discapacidad">
 
             <option value="35">Entre 0% y 35%</option>
             <option value="65">Entre 35% y 65%</option>
@@ -289,18 +323,34 @@
         </select></td><!--GRADO DISCAP-->
 
 
-        <td class="col-sm-2">
+        <td class="col-md-3">
           <input name="java" type="checkbox" value="on"/> Tiene acreditada la necesidad de ayuda de terceros  </td><!--NECESIDADES-->       
         <td>
-      <div class="col-md-5">
-      <input type="text" class="form-control" ><!--Día-->
+      <div class="col-md-7">
+      <div class="center">
+          <p>
+            </p><div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[3]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[3]" class="form-control input-number" value="1" min="1" max="10">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[3]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </span>
+            </div>
+          <p></p>
+          </div>
         </div>
 
         </td> 
         
           </tr>
           <tr>
-           <td class="col-sm-4">
+           <td class="col-sm-1">
                 <div class="row"><!--PRIMER FILA DONDE PONDRE: DIA, MES Y AÑO-->
                   <div class="col-md-3">
                   <input type="text" class="form-control" placeholder="Día">
@@ -328,7 +378,7 @@
                 </div>
               </td><!--AÑO DE NACIMIENTO-->
                 
-           <td class="col-sm-3"> <select name="discapacidad">
+           <td class="col-sm-2"> <select name="discapacidad">
 
             <option value="35">Entre 0% y 35%</option>
             <option value="65">Entre 35% y 65%</option>
@@ -336,11 +386,29 @@
         </select></td><!--GRADO DISCAP-->
 
 
-        <td class="col-sm-2">
+        <td class="col-md-3">
           <input name="java" type="checkbox" value="on"/> Tiene acreditada la necesidad de ayuda de terceros  </td><!--NECESIDADES-->       
         <td>
-      <div class="col-md-5">
-      <input type="text" class="form-control" ><!--Día-->
+      <div class="col-md-7">
+        <div class="center">
+          <p>
+            </p><div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[4]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[4]" class="form-control input-number" value="1" min="1" max="10">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[4]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </span>
+            </div>
+          <p></p>
+          </div>
+
+      
         </div>
 
         </td> 
@@ -367,6 +435,89 @@
         <script>window.jQuery || document.write('<script src="../assets/jquery.min.js"><\/script>')</script>
         <script src="../dist/js/bootstrap.min.js"></script>
         <script src="../assets/js/docs.min.js"></script>
+
+<script>
+//plugin bootstrap minus and plus
+//http://jsfiddle.net/laelitenetwork/puJ6G/
+$('.btn-number').click(function(e){
+    e.preventDefault();
+    
+    fieldName = $(this).attr('data-field');
+    type      = $(this).attr('data-type');
+    var input = $("input[name='"+fieldName+"']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if(type == 'minus') {
+            
+            if(currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+            } 
+            if(parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+            }
+
+        } else if(type == 'plus') {
+
+            if(currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+
+        }
+    } else {
+        input.val(0);
+    }
+});
+$('.input-number').focusin(function(){
+   $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+    
+    minValue =  parseInt($(this).attr('min'));
+    maxValue =  parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+    
+    name = $(this).attr('name');
+    if(valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if(valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    
+    
+});
+
+$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+
+</script>
+
+
+<script>$(document).ready(function(){
+$('[data-toggle="tooltip"]').tooltip(); 
+});</script>
 
 		</body>
 </html>

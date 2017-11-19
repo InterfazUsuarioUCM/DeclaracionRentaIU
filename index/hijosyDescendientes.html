@@ -53,8 +53,8 @@
         <div class="col-md-2"> </div>
          <div class="col-md-7"> 
             <div class="row">
-                <div class="col-md-1"> 
-                 <p class="text-info"> Datos personales</p>
+                <div class="col-md-1" > 
+                 <p class="text-info" "text-md-left">Datos personales</p>
                 </div>
                 <div class="col-md-1"> </div>
                 <div class="col-md-1"> 
@@ -135,10 +135,11 @@
       <!-- /NAVEGACIÓN Y LOGO-->
 
 
-
+      </br>
+      </br>
       <!--<div class="container theme-showcase" role="main">-->
         <div class="container-fluid">
-        <h1>Hijos o descendientes menores de 25 años o discapacitados que conviven con el perceptor
+        <h1 class="text-left">Hijos o descendientes menores de 25 años o discapacitados que conviven con el perceptor
         </h1>
         </br>
         <div class="panel panel-default">
@@ -156,10 +157,14 @@
     <thead>
         <tr>
             <th class="col-sm-3">Año de nacimiento</th>
-            <th class="col-sm-3">Año de adopción*</th>
+            <th class="col-sm-3">Año de adopción
+              <span class="glyphicon glyphicon-warning-sign" data-toggle= "tooltip" title = "Rellenar solo en caso de adopción">
+              </span>
+            </th>
             <th class="col-sm-2">Grado de discapacidad</th>
             <th class="col-sm-2">Necesidades</th>
-            <th class="col-sm-2">Computo por entero**</th>
+            <th class="col-sm-2">Computo por entero <span class="glyphicon glyphicon-warning-sign" data-toggle= "tooltip" title = "En caso de hijos que convivan únicamente con Vd.">
+              </span></th>
         </tr>
     </thead>
     <tbody>
@@ -241,8 +246,8 @@
 
 
         <!--5-->
-        <td class="col-sm-2"><input type="radio" name="sexo" value="hombre"  /> Sí
-      <input type="radio" name="sexo" value="mujer" /> No</td><!--COMPUTO-->
+        <td class="col-sm-2"><input type="radio" name="sexo1" value="hombre"  /> Sí
+      <input type="radio" name="sexo1" value="mujer" /> No</td><!--COMPUTO-->
                 
 
             </tr>
@@ -325,8 +330,8 @@
 
 
         <!--5-->
-        <td class="col-sm-2"><input type="radio" name="sexo" value="hombre"  /> Sí
-      <input type="radio" name="sexo" value="mujer" /> No</td><!--COMPUTO-->
+        <td class="col-sm-2"><input type="radio" name="sexo2" value="hombre"  /> Sí
+      <input type="radio" name="sexo2" value="mujer" /> No</td><!--COMPUTO-->
                 
 
             </tr>
@@ -407,8 +412,8 @@
 
 
         <!--5-->
-        <td class="col-sm-2"><input type="radio" name="sexo" value="hombre"  /> Sí
-      <input type="radio" name="sexo" value="mujer" /> No</td><!--COMPUTO-->
+        <td class="col-sm-2"><input type="radio" name="sexo3" value="hombre"  /> Sí
+      <input type="radio" name="sexo3" value="mujer" /> No</td><!--COMPUTO-->
                 
 
             </tr>
@@ -489,16 +494,18 @@
 
 
         <!--5-->
-        <td class="col-sm-2"><input type="radio" name="sexo" value="hombre"  /> Sí
-      <input type="radio" name="sexo" value="mujer" /> No</td><!--COMPUTO-->
+        <td class="col-sm-2"><input type="radio" name="sexo4" value="hombre"  /> Sí
+      <input type="radio" name="sexo4" value="mujer" /> No</td><!--COMPUTO-->
                 
 
             </tr>
        
+
+
     </tbody>
-</table>
-</div>
-</div>
+    </table>
+    </div>
+    </div>
       </div><!--CIERRE DEL CONTAINER FLUID-->
 
         <ul class="pager">
@@ -515,5 +522,12 @@
         <script src="../dist/js/bootstrap.min.js"></script>
         <script src="../assets/js/docs.min.js"></script>
 
+<script>$(document).ready(function(){
+$('[data-toggle="tooltip"]').tooltip(); 
+});</script>
+
+
+    
+        
 		</body>
 </html>
