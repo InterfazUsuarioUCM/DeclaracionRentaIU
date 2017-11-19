@@ -1,18 +1,3 @@
-function check(that) {
-            if (that.value === "other") {
-                var textBox = document.createElement('input');
-                textBox.setAttribute("type", "text");
-                textBox.style.backgroundColor = "yellow";
-                textBox.setAttribute("id", "newTextBox");
-                document.getElementById('form1').appendChild(textBox);
-            }
-
-            else {
-                var box = document.getElementById('newTextBox');
-                if (box)
-                    box.parentNode.removeChild(box);
-            }
-}
 
 function checkPensiones(that) {
 
@@ -99,5 +84,44 @@ function checkVivienda(that) {
 
 }
 
+///----------------------------------------- SITUACION FAMILIAR -------------------------------------------------///
+function checkCasado(that) {
 
-    
+            if (that.value === "no") {
+
+            var txtCasado1 = document.getElementById("casado").innerHTML = "No rellene nada más. Por favor, continue al punto 3: Hijos y descencientes.";
+            
+            }
+
+            else {
+                    txtCasado1 = document.getElementById("casado").innerHTML = " ";
+            }
+}
+
+function check1500(that){
+
+     if (that.value === "si") {
+
+                 //INPUT
+                var textDNI = document.createElement('input');
+
+                textDNI.setAttribute("type", "text");
+                textDNI.setAttribute("placeholder", "DNI/NIF cónyuge");
+                textDNI.setAttribute("id", "newTextDNI");
+
+                document.getElementById('situacion2').appendChild(textDNI);
+                
+                var txtPensiones = document.getElementById("1500txt").innerHTML = "Introduzca DNI/NIF de su cónyuge:";
+                
+            }
+
+            else {
+               var boxDNI = document.getElementById('newTextDNI');
+   
+                if (boxDNI){
+                    boxDNI.parentNode.removeChild(boxDNI);
+                    txtPensiones = document.getElementById("1500txt").innerHTML = " ";
+                }
+            }
+
+}

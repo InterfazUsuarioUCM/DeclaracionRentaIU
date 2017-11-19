@@ -12,6 +12,10 @@
 			<meta name="keywords" content="IU, HTML, UCM, modelo 145, informática, web" />
 			<meta name="description" content="Diseño del modelo 145 del IRPF" />
 
+      <script type="text/javascript"    
+          src="../js/EsqueletoIf.js">
+      </script>
+
         <!-- Links -->
       <link rel="icon" href="../images/ico_sede2.gif">
         <!-- Bootstrap core CSS -->
@@ -144,24 +148,25 @@
 
         <div class="panel panel-default">
           <div class="panel-body">
-    				<!--SOLTERO O CASADO-->
-            <h4>¿Está usted soltero y con hijos menores de 18 años o incapacitados judicialmente?</h4>
-            <label class="radio-inline"><input type="radio" name="optradio">Si</label>
-            <label class="radio-inline"><input type="radio" name="optradio">No</label>
+        <!--SOLTERO O CASADO-->
+        <h4>¿Está usted soltero y con hijos menores de 18 años o incapacitados judicialmente?</h4>
+      <form class="form-group" id="situacion1">
+          <input type="radio" name="sexo" value="si" check = "checked"   onchange="checkCasado(this)"  /> Sí
+          <input type="radio" name="sexo" value="no"   onchange="checkCasado(this)"  /> No
+           <p ><b id="casado" class="text-warning"> </b></p>
+      </form>
+     
+        <br/>
 
-
-    				<h4>¿Está usted casado y no separado legalmente y su cónyuge no obtiene rentas mayores que 1500€ anuales? </h4>
-            <label class="radio-inline"><input type="radio" name="optradio">Si</label>
-            <label class="radio-inline"><input type="radio" name="optradio">No</label>
-
-
-              <div class="form-inline" role="form">
-                  <div class="form-group">
-                  <label for="DNI">DNI/NIF Cónyuge</label>
-                     <input type="email" class="form-control" id="DNI" placeholder="Introduce tu DNI/NIF">
-                </div>
-              </div>
-
+    
+        <h4>¿Está usted casado y no separado legalmente y su cónyuge no obtiene rentas mayores que 1500€ anuales? </h4>
+        <form class="form-group" id="situacion2">
+        <input type="radio" name="casado" value="si" onchange="check1500(this)" /> Sí
+        <input type="radio" name="casado" value="no" check = "checked" onchange="check1500(this)" /> No
+        <p id="1500txt"> </p>
+        </form>
+     
+        <br/>
           </div>
         </div>
 
